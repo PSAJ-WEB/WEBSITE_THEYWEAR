@@ -3,8 +3,8 @@
 body {
   margin: 0;
   padding: 0;
-  overflow-x: hidden; /* Hilangkan scroll bar horizontal saja */
-  width: 100%; /* Hindari lebar yang melebihi viewport */
+  overflow-x: hidden; 
+  width: 100%; 
   box-sizing: border-box;
 }
 
@@ -21,9 +21,9 @@ body {
   background-color: white;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   border-bottom: 1px solid #000;
-  position: sticky; /* Membuat navbar tetap di atas */
-  top: 0; /* Tetap di posisi paling atas saat scroll */
-  z-index: 1000; /* Pastikan navbar berada di atas elemen lainnya */
+  position: sticky; 
+  top: 0; 
+  z-index: 1000; 
 }
 .navbar {
   display: flex;
@@ -45,31 +45,31 @@ body {
 .logo {
   position: relative;
   height: 80px;
-  /* Atur ukuran logo */
+  
   object-fit: contain;
-  /* Agar proporsional */
+  
   image-rendering: auto;
-  /* Optimalkan kualitas gambar */
+  
 }
 
 .navbar>.logo {
   flex: 1;
-  /* Logo mendapatkan ruang fleksibel */
+  
   text-align: center;
-  /* Logo berada di tengah */
+  
 }
 
 .navLeft,
 .navRight {
   flex: 1;
-  /* Bagian kiri dan kanan mendapat ruang yang sama */
+  
   justify-content: flex-start;
-  /* Elemen kiri tetap rata kiri */
+  
 }
 
 .navRight {
   justify-content: flex-end;
-  /* Elemen kanan tetap rata kanan */
+  
 }
 
 
@@ -79,52 +79,52 @@ body {
 
 .first {
   display: flex;
-  /* Flexbox untuk membagi dua bagian */
+  
   align-items: center;
-  /* Vertikal rata tengah */
+  
   justify-content: space-between;
-  /* Beri jarak antara kiri dan kanan */
+  
   gap: 20px;
-  /* Jarak antar kolom */
+  
   padding: 40px;
-  /* Ruang di sekitar section */
+  
 }
 
 .contentLeft {
   flex: 1;
-  /* Bagian kiri mengambil ruang yang sama */
+  
   display: flex;
   flex-direction: column;
-  /* Tumpuk judul dan tombol */
+  
   justify-content: center;
   gap: 20px;
-  /* Jarak antara judul dan tombol */
+  
 }
 .italic {
-  font-style: italic; /* Membuat teks miring */
+  font-style: italic; 
 }
 
 .titlefirst {
   font-family: 'Times New Roman';
   font-size: 50px;
-  /* Ukuran font besar */
+  
   line-height: 1.4;
-  /* Jarak antar baris */
+  
   font-weight: 500;
-  /* Font tebal */
+  
   color: #000;
-  /* Warna teks */
+  
 }
 
 .shopButton {
   font-family: 'Inter';
   padding: 10px 20px;
   width: 200px;
-  /* Padding untuk tombol */
+  
   background-color: #000;
-  /* Warna latar tombol */
+  
   color: #fff;
-  /* Warna teks tombol */
+  
   border: none;
   border-radius: 1px;
   cursor: pointer;
@@ -134,13 +134,14 @@ body {
 
 .shopButton:hover {
   background-color: #444;
-  /* Warna saat tombol dihover */
+  
 }
 
 .contentRight {
+  margin-bottom: -40px;
   flex: 1;
   display: flex;
-  justify-content: flex-end;  /* Memastikan gambar di sebelah kanan */
+  justify-content: flex-end;
   align-items: center;
 }
 
@@ -148,13 +149,14 @@ body {
   margin-top: -50px;
   margin-right: -25px;
   position: relative;
-  box-shadow: -10px 0px 15px rgba(0, 0, 0, 0.1); /* Shadow di sebelah kiri gambar */
+  box-shadow: -10px 0px 15px rgba(0, 0, 0, 0.1);
 }
 
 .image {
-  width: 550px;
-  height: 550px;
+  width: 50vw; 
+  height: auto; 
   object-fit: cover;
+  border-left: 2px solid rgba(0, 0, 0, 0.1); 
 }
 
 .bestSellers {
@@ -169,58 +171,58 @@ body {
   margin-bottom: 20px;
 }
 
-/* Custom scrollbar untuk .productGridWrapper */
+
 .productGridWrapper {
   margin-left: 35px;
   width: 100%;
-  overflow-x: auto; /* Scroll bar horizontal muncul jika konten lebih lebar dari container */
-  -webkit-overflow-scrolling: touch; /* Untuk mendukung scrolling di perangkat mobile */
+  overflow-x: auto; 
+  -webkit-overflow-scrolling: touch; 
   padding-bottom: 10px;
 }
 
-/* Styling scrollbar */
+
 .productGridWrapper::-webkit-scrollbar {
   border-radius: 10px;
-  width: 10px; /* Lebar scrollbar */
-  height: 10px; /* Tinggi scrollbar horizontal */
+  width: 10px; 
+  height: 10px; 
 }
 
 .productGridWrapper::-webkit-scrollbar-track {
-  background-color: transparent; /* Warna track scrollbar */
-  border-radius: 10px; /* Menambahkan border radius pada track scrollbar */
+  background-color: transparent; 
+  border-radius: 10px; 
 }
 
 .productGridWrapper::-webkit-scrollbar-thumb {
-  background-color: black; /* Warna scroll thumb */
-  border-radius: 10px; /* Menambahkan border radius pada thumb */
+  background-color: black; 
+  border-radius: 10px; 
 }
 
 .productGridWrapper::-webkit-scrollbar-thumb:hover {
-  background-color: #333; /* Warna thumb ketika dihover */
+  background-color: #333; 
 }
 
-/* Untuk Firefox */
+
 .productGridWrapper {
-  scrollbar-width: thin; /* Mengatur lebar scrollbar untuk Firefox */
-  scrollbar-color: black transparent; /* Warna thumb dan track untuk Firefox */
+  scrollbar-width: thin; 
+  scrollbar-color: black transparent; 
 }
 
 
 .productGrid {
-  display: flex; /* Flexbox untuk menampilkan produk dalam satu baris */
-  flex-wrap: nowrap; /* Mencegah produk berbaris ke bawah */
-  min-width: max-content; /* Pastikan grid menyesuaikan dengan lebar total produk */
+  display: flex; 
+  flex-wrap: nowrap; 
+  min-width: max-content; 
 }
 
 .productCard {
   text-align: center;
   background-color: white;
-  padding: 10px;
+  padding: 0px;
   display: flex;
   justify-content: center;
   flex-direction: column;
-  width: 300px; /* Tentukan lebar tetap untuk produk */
-  margin-right: 10px; /* Menambahkan jarak antar produk */
+  width: 270px; 
+  margin-right: 10px; 
 }
 
 .productImageWrapper {
@@ -230,7 +232,7 @@ body {
 }
 
 .productImage {
-  padding: 10px;
+  padding: 0px;
   width: 100%;
   height: auto;
   border: 1px solid black;
@@ -255,10 +257,10 @@ body {
   text-align: center;
   height: 500px;
   margin-bottom: 0px;
-  background-image: url('../img/model8.jpg'); /* Add the background image */
+  background-image: url('../img/model8.jpg'); 
   background-size: cover;
   background-position: center;
-  padding: 50px 0; /* Add some padding for spacing */
+  padding: 50px 0; 
 }
 
 .sectionTitle {
@@ -268,13 +270,13 @@ body {
   width: 430px;
   height: 430px;
   font-weight: 400;
-  color: #fff; /* White text color */
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Optional shadow for better visibility */
-  border: 2px solid #fff; /* Add the white border */
+  color: #fff; 
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); 
+  border: 2px solid #fff; 
   display: inline-block;
-  padding: 100px 60px; /* Adjust padding to give some space around the text */
-  line-height: 1.0; /* Adjust line spacing closer together */
-  margin-left: -800px; /* Align the section title to the left of its container */
+  padding: 100px 60px; 
+  line-height: 1.0; 
+  margin-left: -800px; 
 }
 
 .shopText {
@@ -283,19 +285,19 @@ body {
   font-family: 'Arial';
   font-size: 20px;
   color: #fff;
-  text-decoration: underline; /* Underline the text */
+  text-decoration: underline; 
   font-weight: 400;
-  cursor: pointer; /* Optional: change the cursor to a pointer when hovered */
+  cursor: pointer; 
 }
 .brandDescription {
   font-size: 18px;
   margin-bottom: 20px;
-  color: #fff; /* White text for the description */
+  color: #fff; 
 }
 
 .brandGrid {
   display: grid;
-  grid-template-columns: 1fr; /* One column layout */
+  grid-template-columns: 1fr; 
   grid-gap: 20px;
 }
 
@@ -304,10 +306,10 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 2px solid #000; /* Black border */
-  height: 80px; /* Increased height */
-  overflow: hidden; /* Prevent text from overflowing outside of the item */
-  background-color: #000; /* Black background for the entire item */
+  border: 2px solid #000; 
+  height: 55px; 
+  overflow: hidden; 
+  background-color: #000; 
 }
 
 .brandCaption {
@@ -315,29 +317,167 @@ body {
   font-family: 'Inter';
   font-size: 14px;
   color: #fff;
-  line-height: 80px; /* Center the text vertically */
-  white-space: nowrap; /* Prevent text from wrapping */
-  display: inline-block; /* Ensure the text stays on a single line */
-  animation: scrollText 33s linear infinite; /* Slower animation (33s) */
-  padding-right: 30px; /* Add some space to the right side for smooth scrolling */
+  line-height: 80px; 
+  white-space: nowrap; 
+  display: inline-block; 
+  animation: scrollText 33s linear infinite; 
+  padding-right: 30px; 
 }
 
 @keyframes scrollText {
   0% {
-    transform: translateX(100%); /* Start off-screen */
+    transform: translateX(100%); 
   }
   100% {
-    transform: translateX(-100%); /* End off-screen to the left */
+    transform: translateX(-100%); 
   }
 }
 
+.shopTheLook {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.topSection,
+.bottomSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.imageWrapper2 {
+  flex: 1;
+}
+.imageWrapper3 {
+  flex: 1;
+}
+
+.mainImage {
+  max-width: 50vw; 
+  height: auto; 
+  object-fit: cover; 
+  border-right: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+.secondaryImage {
+  margin-top: -50px;
+  max-width: 50vw; 
+  height: auto;
+  object-fit: cover;
+  margin-right: 0px;
+  border-left: 2px solid rgba(0, 0, 0, 0.1); 
+}
+
+.content {
+  margin-left: 0px;
+  flex: 1;
+  padding-left: 20px;
+}
+
+.titlebottom{
+  font-size: 48px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  font-family: 'Newsreader';
+}
+.titlebottom2{
+  font-size: 48px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  font-family: 'Newsreader';
+}
+.subTitle {
+  font-family: 'Inter';
+  font-size: 28px;
+  font-weight: bold;
+  margin-top: -0px;
+  margin-bottom: 0px;
+}
+
+.productGridBottom {
+  display: flex; 
+  gap: 20px;
+  overflow-x: auto; 
+  padding: 10px 0; 
+  scroll-snap-type: x mandatory; 
+}
+
+.productCardBottom {
+  flex: 0 0 200px; 
+  max-width: 200px; 
+  background: #f9f9f9;
+  padding: 15px;
+  border-radius: 5px;
+  text-align: center;
+  scroll-snap-align: start; 
+}
 
 
-.addToCart {
+.productImageBottom {
+  width: 100%; 
+  max-height: 200px; 
+  object-fit: contain; 
+  margin-bottom: 10px;
+}
+
+.productTitleBottom {
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.productPriceBottom {
+  margin-bottom: 10px;
+  font-family: 'Inter';
+  font-size: 14px;
+  color: #555;
+}
+
+.addToCartBottom {
   background-color: black;
   color: white;
   border: none;
   padding: 8px 16px;
   font-size: 14px;
   cursor: pointer;
+  border-radius: 5px;
+}
+
+.productGridBottom::-webkit-scrollbar {
+  height: 8px; 
+}
+
+.productGridBottom::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.9); 
+  border-radius: 10px;
+}
+
+.productGridBottom::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.1); 
+}
+.textContent {
+  margin-left: 40px;
+  flex: 1;
+  padding-right: 20px;
+}
+
+.description {
+  color: #000;
+  margin: 20px 0;
+  font-size: 16px;
+  font-family: 'Inter';
+}
+
+.readMore {
+  width: 150px;
+  background-color: #000;
+  font-family: 'Inter';
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 0px;
 }

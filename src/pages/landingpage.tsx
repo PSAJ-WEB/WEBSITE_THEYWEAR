@@ -82,7 +82,21 @@ const LandingPage: Component = () => {
             <img src={model} alt="Fashion" class={styles.image} />
           </div>
         </div>
+
       </section>
+      <div class={styles.brandGrid}>
+        <div class={styles.brandItem}>
+          <p class={styles.brandCaption}>
+            FREE SHIPPING ON ALL DOMESTIC ORDERS OVER $150 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            FREE SHIPPING ON ALL DOMESTIC ORDERS OVER $150 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            FREE SHIPPING ON ALL DOMESTIC ORDERS OVER $150 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            FREE SHIPPING ON ALL DOMESTIC ORDERS OVER $150 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            FREE SHIPPING ON ALL DOMESTIC ORDERS OVER $150 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            FREE SHIPPING ON ALL DOMESTIC ORDERS OVER $150 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            FREE SHIPPING ON ALL DOMESTIC ORDERS OVER $150
+          </p>
+        </div>
+      </div>
 
       <section class={styles.bestSellers}>
         <h2 class={styles.titletwo}>This Season's Best Sellers</h2>
@@ -121,25 +135,63 @@ const LandingPage: Component = () => {
         </div>
       </div>
       <section class={styles.shopTheLook}>
-        <h2 class={styles.sectionTitle}>Shop The Look.</h2>
-        <div class={styles.productGrid}>
-          <div class={styles.productCard}>
-            <img src="/images/scuba-jacket-2.0.jpg" alt="Scuba Jacket 2.0" class={styles.productImage} />
-            <h3 class={styles.productTitle}>Scuba Jacket 2.0</h3>
-            <p class={styles.productPrice}>$118</p>
-            <button class={styles.addToCart}>ADD TO CART</button>
+        <div class={styles.topSection}>
+          <div class={styles.imageWrapper2}>
+            <img src={model} alt="Main Fashion" class={styles.mainImage} />
           </div>
-          <div class={styles.productCard}>
-            <img src="/images/cropped-bra.jpg" alt="Cropped Bra" class={styles.productImage} />
-            <h3 class={styles.productTitle}>Cropped Bra</h3>
-            <p class={styles.productPrice}>$59</p>
-            <button class={styles.addToCart}>ADD TO CART</button>
+          <div class={styles.content}>
+            <h2 class={styles.titlebottom}>Shop The Look.</h2>
+            <div class={styles.productGridBottom}>
+              <div class={styles.productCardBottom}>
+                <img src={model2} alt="Cropped Bra" class={styles.productImageBottom} />
+                <h3 class={styles.productTitleBottom}>Cropped Bra</h3>
+                <p class={styles.productPriceBottom}>$59</p>
+                <button class={styles.addToCartBottom}>ADD TO CART</button>
+              </div>
+              <div class={styles.productCardBottom}>
+                <img src={model2} alt="Cropped Bra" class={styles.productImageBottom} />
+                <h3 class={styles.productTitleBottom}>Cropped Bra</h3>
+                <p class={styles.productPriceBottom}>$59</p>
+                <button class={styles.addToCartBottom}>ADD TO CART</button>
+              </div>
+              <div class={styles.productCardBottom}>
+                <img src={model3} alt="Classic Legging" class={styles.productImageBottom} />
+                <h3 class={styles.productTitleBottom}>Classic Legging</h3>
+                <p class={styles.productPriceBottom}>$79</p>
+                <button class={styles.addToCartBottom}>ADD TO CART</button>
+              </div>
+              <div class={styles.productCardBottom}>
+                <img src={model3} alt="Classic Legging" class={styles.productImageBottom} />
+                <h3 class={styles.productTitleBottom}>Classic Legging</h3>
+                <p class={styles.productPriceBottom}>$79</p>
+                <button class={styles.addToCartBottom}>ADD TO CART</button>
+              </div>
+              <div class={styles.productCardBottom}>
+                <img src={model3} alt="Classic Legging" class={styles.productImageBottom} />
+                <h3 class={styles.productTitleBottom}>Classic Legging</h3>
+                <p class={styles.productPriceBottom}>$79</p>
+                <button class={styles.addToCartBottom}>ADD TO CART</button>
+              </div>
+              <div class={styles.productCardBottom}>
+                <img src={model3} alt="Classic Legging" class={styles.productImageBottom} />
+                <h3 class={styles.productTitleBottom}>Classic Legging</h3>
+                <p class={styles.productPriceBottom}>$79</p>
+                <button class={styles.addToCartBottom}>ADD TO CART</button>
+              </div>
+            </div>
           </div>
-          <div class={styles.productCard}>
-            <img src="/images/classic-legging.jpg" alt="Classic Legging" class={styles.productImage} />
-            <h3 class={styles.productTitle}>Classic Legging</h3>
-            <p class={styles.productPrice}>$79</p>
-            <button class={styles.addToCart}>ADD TO CART</button>
+        </div>
+        <div class={styles.bottomSection}>
+          <div class={styles.textContent}>
+            <h2 class={styles.subTitle}>Discover More Styles</h2>
+            <h1 class={styles.titlebottom2}>What We Stand For.</h1>
+            <p class={styles.description}>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ac dui eu arcu efficitur sollicitudin. Fusce interdum, nisi id lobortis ultricies, elit leo vulputate mi, vel fermentum nunc eros non mi. Sed volutpat orci non nulla tincidunt, at mollis nisi sollicitudin. Nulla facilisi. Donec a sem sapien. Integer tempor, mauris id tempor tempor, eros purus ullamcorper ante, eu vestibulum nisi dui vel libero. Morbi et nisl ac sapien gravida pharetra. Ut auctor mi vel velit aliquam, at egestas metus dictum. Curabitur hendrerit urna sit amet risus iaculis, id condimentum felis vestibulum.
+            </p>
+            <button class={styles.readMore}>READ MORE</button>
+          </div>
+          <div class={styles.imageWrapper3}>
+            <img src={model} alt="Additional Fashion" class={styles.secondaryImage} />
           </div>
         </div>
       </section>
